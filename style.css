@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(video.mp4);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+nav{
+  display: flex;
+  
+  justify-content:space-between;
+  align-items: center;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: center;
+  
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+  top: 0px;
+}
+.nav-links ul li a{
+  display: grid;
+  color:slategrey;
+  font-size: 15px;
+  text-decoration: none;
+  grid-template-columns: 150px;
+  
+}
+.nav-links ul li a:hover{
+  color: salmon;
+}
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:salmon;
+  display: block;
+  margin:auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 50%;
+
+}
+.portal{
+  width: 90%;
+  color:slategrey;
+  position: absolute;
+  top: 35%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  text-decoration: none;
+}
+.portal h1{
+  font-size: 40px;
+  color: salmon;
+}
+button{
+  background-color: transparent;
+  border: 1px solid salmon;
+  border-radius: 10px;
+  color:slategrey;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+  box-shadow: 0 0 30px salmon,
+              0 0 30px salmon,
+              0 0 10px 0 salmon;
+}
+button a{
+  text-decoration: none;
+  color: slategrey
+}
+button:hover{
+  border: 1px solid salmon;
+  background: salmon;
+  transition: 1s;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20x 0;
+  color:slategrey;
+  background-color: salmon;
+  
+}
+.footer h4{
+  margin-bottom: 20px;
+  margin-top: 25x;
+  font-weight: 600px;
+  background-color: salmon;
+}
+@media(max-width: 768px){
+  .portal h1{
+    font-size: 27px;
+  }
+  .nav-links{
+    text-align:center;
+  }
+  .nav-links ul li a{
+    display: inline-block;
+  }
+}
