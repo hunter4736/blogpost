@@ -275,9 +275,15 @@ main{
     margin:20px 0;
   }
 }
+/* Footer */
 
 .footer{
   background-color: salmon;
   text-align: center;
-
+}
+.footer h3{
+  color: slategray;
+}
+.icons{
+  padding:10px;
 }

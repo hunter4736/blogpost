@@ -39,21 +39,21 @@ nav{
   grid-template-columns: 150px;
   
 }
-.nav-links ul li a:hover{
+.nav-links a:hover{
   color: salmon;
 }
-.nav-links ul li::after{
+.nav-links a::after{
   content: "";
   width: 0%;
   height: 2px;
   background:salmon;
-  display: block;
-  margin:auto;
+  display:block;
+  margin: auto;
   transition: 0.5s;
 }
-.nav-links ul li:hover::after{
-  width: 50%;
-
+.nav-links a:hover::after{
+  width: 55%;
+  margin: auto;
 }
 .portal{
   width: 90%;
@@ -70,6 +70,9 @@ nav{
   color: salmon;
 }
 button{
+  position:absolute;
+  bottom: -50%;
+  left: 45%;
   background-color: transparent;
   border: 1px solid salmon;
   border-radius: 10px;
@@ -90,21 +93,33 @@ button:hover{
   border: 1px solid salmon;
   background: salmon;
   transition: 1s;
+ 
 }
+
 .footer{
   width: 100%;
   text-align: center;
   padding: 20x 0;
   color:slategrey;
   background-color: salmon;
-  
 }
-.footer h4{
-  margin-bottom: 20px;
-  margin-top: 25x;
-  font-weight: 600px;
-  background-color: salmon;
+.copyright{
+  position: absolute;
+  bottom:10%;
 }
+.footer h3{
+  color: slategray;
+}
+
+/* Contact */
+.contact{
+  color: salmon;
+  position: absolute;
+  bottom:40%;
+  left: 38%;
+  font-size: 20px;
+}
+
 @media(max-width: 768px){
   .portal h1{
     font-size: 27px;
@@ -115,4 +130,19 @@ button:hover{
   .nav-links ul li a{
     display: inline-block;
   }
-}
+  .explore-btn{
+    position: absolute;
+    left:37%;
+  }
+  .nav-links a:hover::after{
+    width: 100%;
+    margin: auto;
+  }
+  .contact{
+    font-size: 16px;
+    position: absolute;
+    top:75%;
+    left:18%;
+    
+    }
+  }

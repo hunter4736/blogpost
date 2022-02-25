@@ -104,6 +104,7 @@ nav .nav-links a{
   display: none;
 }
 @media only screen and (max-width:768px){
+
   .mobile-menu{
     display:block;
   }
@@ -255,6 +256,10 @@ main{
 .wrapper h4{
   margin: 0px;
 }
+blockquote{
+  color:slategray;
+  font-size: 24px;
+}
 
 @media only screen and (max-width:768px){
   .site-container{
@@ -265,12 +270,51 @@ main{
     grid-template-columns: 1fr;
   }
   .wrapper{
-    margin:20px 0;
+    margin:16px 0;
   }
 }
-
 .footer{
   background-color: salmon;
   text-align: center;
+}
+
+.footer h3{
+  color: slategray;
+}
+
+@media only screen and (max-width:768px){
+  .site-container{
+    width:100%;
+    padding:0 25px;
+  }
+  .mobile-menu{
+   display: block;
+   color: salmon;
+    
+  }
+  .nav-links {
+    position: absolute;
+    background-color:rgb(48, 47, 47);
+    color: salmon;
+    
+    
+    width: 100%;
+    top:100%;
+    z-index: 99; 
+    display: none;
+  }  
+  .nav-links a{
+    padding: 32px;
+    font-size: 22px;
+    display: block;
+    
+  }
+  .show{
+    display: block;
+   
+  }
+  blockquote{
+    font-size: 16px;
+  }
 
 }
